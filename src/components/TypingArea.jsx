@@ -47,7 +47,9 @@ export default function TypingArea({
   useEffect(() => {
     if (status !== "running") return;
 
+
     function handleKey(e) {
+      e.target.focus()
 
       if (e.key.length > 1 && e.key !== "Backspace") return;
 
