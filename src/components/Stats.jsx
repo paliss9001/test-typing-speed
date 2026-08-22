@@ -26,7 +26,7 @@ export default function Stats({
   }
 
   if (status === "running") {
-    wpmData[1] = "Calculating..."
+    wpmData[1] = "~"
   }
 
   accuracy[1] = accuracyRate.toFixed(0) + "%"
