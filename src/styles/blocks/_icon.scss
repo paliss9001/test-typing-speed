@@ -1,0 +1,27 @@
+@use '../helpers/' as *;
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  column-gap: rem(10);
+  
+  &::before {
+    content: '';
+
+    @include square(rem(20));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+
+  &--cup::before {
+    content: '';
+    background-image: url('../../assets/images/icon-personal-best.svg');
+  }
+
+  &--restart::before {
+    content: '';
+    background-image: url('../../assets/images/icon-restart.svg');
+  }
+}

@@ -1,0 +1,15 @@
+@use './fonts';
+@use './globals';
+@use './normalize';
+@use './variables';
+@use './utils';
+
+@use './blocks/icon';
+@use './blocks/header';
+@use './blocks/stats';
+@use './blocks/options';
+@use './blocks/controls';
+@use './blocks/select';
+@use './blocks/typing-area';
+@use './blocks/restart';
+@use './blocks/results'

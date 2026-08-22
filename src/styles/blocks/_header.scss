@@ -1,0 +1,28 @@
+@use '../helpers/' as *;
+
+.header {
+  display: flex;
+  padding-block: rem(32) rem(64);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include mobile {
+    padding-block: rem(16) rem(32)
+  }
+
+  &__label {
+    @include text-preset-4-regular;
+
+    color: var(--color-neutral-400);
+  }
+
+  &__wpm {
+    color: #fff;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+}

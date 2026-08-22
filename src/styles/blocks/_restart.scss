@@ -1,0 +1,38 @@
+@use '../helpers/' as *;
+
+.restart {
+  display: flex;
+  justify-content: center;
+  padding-block: rem(32);
+  width: 100%;
+  border-top: var(--border);
+  visibility: hidden;
+
+  @include mobile {
+    padding-block: rem(16);
+  }
+
+  &.active {
+    visibility: visible;
+  }
+
+  &__button {
+    background-color: var(--color-neutral-600);
+    display: flex;
+    align-items: center;
+    padding: rem(16);
+    color: #fff;
+    @include text-preset-3-semibold;
+    border-radius: 12px;
+    border: none;
+    transition-duration: .2s;
+
+    @include hover {
+      background-color: var(--color-neutral-500);
+    }
+
+    &:active {
+      outline: 2px solid var(--color-neutral-600);
+    }
+  }
+}

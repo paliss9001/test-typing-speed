@@ -1,0 +1,46 @@
+@use "../helpers/" as *;
+
+.stats-list {
+  display: flex;
+  column-gap: rem(48);
+
+  @include mobile {
+    justify-content: start;
+  }
+
+    @include mobile-s {
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__data {
+    @include text-preset-2-bold;
+
+    color: #fff;
+
+    @include mobile {
+      font-size: rem(24)
+    }
+  }
+
+  &__term {
+    @include text-preset-3-semibold;
+
+    color: var(--color-neutral-400);
+
+    @include mobile {
+      font-size: rem(16);
+      align-self: flex-start;
+    }
+  }
+
+  &__item {
+    display: flex;
+    column-gap: rem(12);
+    align-items: center;
+    row-gap: rem(8);
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}

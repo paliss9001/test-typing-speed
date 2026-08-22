@@ -1,0 +1,11 @@
+@use '../helpers/' as *;
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: rem(32);
+  row-gap: rem(20);
+  align-items: start;
+  padding-bottom: rem(20);
+}

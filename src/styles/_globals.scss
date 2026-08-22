@@ -1,0 +1,60 @@
+@use 'helpers' as *;
+
+body {
+    font-family: 'Sora';
+    background-color: var(--color-neutral-900);
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: inherit;
+
+    @include hover {
+        color: var(--color-accent);
+    }
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+:focus-visible {
+    outline: rem(2) dashed var(--color-light);
+    outline-offset: rem(4);
+    transition-duration: 0s !important;
+}
+
+a,
+button {
+
+    &[aria-label] {
+        position: relative;
+
+        &::before {
+            @include abs-center;
+            @include square(rem(44));
+
+            content: '';
+        }
+    }
+}

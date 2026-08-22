@@ -1,0 +1,24 @@
+@use 'helpers' as *;
+
+:root {
+  /* Neutral */
+  --color-neutral-900: #101010;
+  --color-neutral-600: #262626;
+  --color-neutral-500: #717178;
+  --color-neutral-400: #8c9297;
+  --color-neutral-0: #ffffff;
+
+  /* Blue */
+  --color-blue-600: #167bff;
+  --color-blue-400: #4ac6ff;
+
+  /* Red */
+  --color-red-500: #e04d63;
+
+  /* Green */
+  --color-green-500: #4dd667;
+
+  /* Yellow */
+  --color-yellow-400: #f4d26e;
+  --border: 1px solid var(--color-neutral-600)
+}

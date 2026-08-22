@@ -1,0 +1,68 @@
+@use "../helpers/" as *;
+
+.options {
+  display: flex;
+  column-gap: rem(48);
+  align-items: start;
+
+  @include mobile {
+    column-gap: rem(16);
+  }
+
+  @include mobile-s {
+    width: 100%;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: rem(12);
+  }
+  &__list {
+    display: flex;
+    column-gap: rem(6);
+  }
+
+  &__label {
+    color: var(--color-neutral-400);
+  }
+
+  &__item {
+    background-color: var(--color-neutral-900);
+    border: 1px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    padding: rem(6) rem(14);
+    transition-duration: .2s;
+
+    &--select {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+
+      &::before {
+        content: "";
+        @include square(rem(14));
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/images/icon-down-arrow.svg");
+        flex-shrink: 0;
+      }
+    }
+
+    &.active {
+      border: 1px solid var(--color-blue-400);
+      color: var(--color-blue-400);
+    }
+
+    &:hover {
+      border-color: var(--color-blue-600);
+      color: var(--color-blue-600);
+    }
+
+    &:active {
+      outline: 2px solid var(--color-blue-600);
+    }
+  }
+}
