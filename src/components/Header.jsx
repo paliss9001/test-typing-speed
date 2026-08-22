@@ -25,7 +25,7 @@ export default function Header({width, setWidth, targetWpm}) {
 
   return (
     <header className="header container">
-      <a href="/"><img className="header__logo" src={targetLogo} /></a>
+      <a href={import.meta.env.BASE_URL}><img className="header__logo" src={targetLogo} /></a>
       <span className="icon icon--cup header__icon">
         <span className="header__label">{targetBestLabel}:</span>
         <span className="header__wpm">{targetWpm.toFixed(0)}wpm</span>
