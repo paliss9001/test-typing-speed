@@ -54,7 +54,7 @@ export default function TypingArea({
       if (e.key === "Backspace") {
         if (typed[typed.length - 1] === overallText[typed.length - 1]) {
           
-          if (typed.length === 0) return;
+          if (typed.length === 0) return
 
           setCorrect(prev => prev - 1);
         }
@@ -64,7 +64,7 @@ export default function TypingArea({
         return;
       }
 
-      if (e.key === overallText[typed.length]) {
+      if (e.key === overallText[allUserText.length]) {
         setCorrect(prev => prev + 1);
       }
 

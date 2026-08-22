@@ -54,7 +54,6 @@ function App() {
     return acc + text;
   }, "");
 
-
   function handleRestart(e) {
     e.target.closest("button").blur();
 
