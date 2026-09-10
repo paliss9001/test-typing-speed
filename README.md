@@ -51,10 +51,6 @@ Users are able to:
 - Figma
 - Vite
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 I am planning to implement a feature that keeps track of the letters users fail to correctly type, and, based on data collected, app will prioritize giving texts with a high occurence of those letters.
