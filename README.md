@@ -1,20 +1,74 @@
+# WPM calculator
 
-Typing Speed Test
+WPM calculator is a web app that measures how quickly you can type different types of text.
 
-A typing speed measurement tool that calculates words per minute (WPM) with two testing modes: a timed 60-second 
-challenge and an untimed passage-completion mode. Personal records are saved locally for tracking progress over time.
+## Table of contents
 
-Features 
-Two test modes:
-Timed Mode (60s) — Type as much as you can within 60 seconds; WPM is calculated based on words typed in the time limit
-Passage Mode — Type until you complete a given passage, with no time constraint; WPM is calculated based on total time taken
-Accuracy tracking — Measures typing accuracy alongside speed
-Local record storage — Best scores and past attempts are saved to localStorage, so records persist across sessions without 
-needing a backend.
+- [Overview](#overview)
+  - [The project](#the-project)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-Formula for WPM calculation: WPM = (Total Characters Typed / 5) / Time Elapsed (in minutes)
 
-Tech Stack
-Frontend: React 
-Styling: CSS, SCSS
-Package Manager: vite
+## Overview
+
+### The project
+
+Users are able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
+- Choose timed or passage mode
+- Filter difficulty
+- See their best run
+- The best result is stored in local storage, so user's data on how they performed won't be lost 
+
+### Screenshot
+
+![](./measure-typing-speed.png)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/paliss9001/test-typing-speed)
+- Live Site URL: [Add live site URL here](https://paliss9001.github.io/test-typing-speed/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [React](https://reactjs.org/) - JS library
+- SASS (SCSS)
+- BEM, Adaptive design
+- Figma
+- Vite
+
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+
+**Note: Delete this note and the content within this section and replace with your own learnings.**
+
+### Continued development
+
+I am planning to implement a feature that keeps track of the letters users fail to correctly type, and, based on data collected, app will prioritize giving texts with a high occurence of those letters.
+
+Furthermore, I want to allows users choose a difficult mode where removing letters won't work, meaning they will have only once change to type letters correctly.
+
+### Useful resources
+
+- [useEffect - React](https://react.dev/reference/react/useEffect) - this page gave me some practical knowledge of how to work with useEffect hook, so I could sync components with Browser API, an extranl system.  
+
+- [Custom hooks](https://react.dev/learn/reusing-logic-with-custom-hooks) - This article helped me a ton to avoid duplicated logic when managing state and write a more robust code.
+
+## Author
+
+- Personal Website - [Ibrohim Baxodirov](https://paliss9001.github.io/ibrohim_baxodirov/)
+- Medium - [@ibrohimbahodirov90](https://medium.com/@ibrohimbahodirov90)
+- LinkedIn - [Ibrohim Baxodirov](https://www.linkedin.com/in/ibrohim-baxodirov-a142632b1/)
