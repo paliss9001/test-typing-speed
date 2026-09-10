@@ -72,4 +72,4 @@ Furthermore, I want to allows users choose a difficult mode where removing lette
 - Personal Website - [Ibrohim Baxodirov](https://paliss9001.github.io/ibrohim_baxodirov/)
 - Medium - [@ibrohimbahodirov90](https://medium.com/@ibrohimbahodirov90)
 - LinkedIn - [Ibrohim Baxodirov](https://www.linkedin.com/in/ibrohim-baxodirov-a142632b1/)
-- Email - [iborhim](ibrohimbahodirov90@gmail.com)
+- Email - ibrohimbahodirov90@gmail.com
